@@ -32,4 +32,21 @@ common-js:
     {% include footer-scripts.html %}
   
   </body>
+
+  <link rel="stylesheet" type="text/css" href="www.ngallo.it/css/cookieconsent.min.css" />
+  <script src="www.ngallo.it/js/cookieconsent.min.js"></script>
+  <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#000"
+        },
+        "button": {
+          "background": "#f1d600"
+        }
+      },
+      "theme": "classic"
+    })});
+  </script>
 </html>
